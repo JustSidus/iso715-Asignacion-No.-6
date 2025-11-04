@@ -1,0 +1,339 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Página de bienvenida */
+.bienvenida {
+    text-align: center;
+    padding: 20px;
+}
+
+.bienvenida h1 {
+    color: #667eea;
+    margin-bottom: 30px;
+}
+
+.bienvenida p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.caracteristicas {
+    list-style: none;
+    margin: 30px 0;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caracteristicas li {
+    padding: 10px;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-campos {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-campos h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.info-campos ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.info-campos li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.acciones-inicio {
+    margin-top: 40px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-principal {
+    background: #667eea;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 40px;
+}
+
+.btn-principal:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-agregar {
+    background: #28a745;
+    color: white;
+}
+
+.btn-agregar:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.btn-editar {
+    background: #ffc107;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+.btn-editar:hover {
+    background: #e0a800;
+}
+
+.btn-eliminar {
+    background: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+.btn-eliminar:hover {
+    background: #c82333;
+}
+
+.btn-guardar {
+    background: #28a745;
+    color: white;
+}
+
+.btn-guardar:hover {
+    background: #218838;
+}
+
+.btn-cancelar {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-cancelar:hover {
+    background: #5a6268;
+}
+
+/* Acciones superiores */
+.acciones {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Tabla de estudiantes */
+.tabla-estudiantes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-estudiantes thead {
+    background: #667eea;
+    color: white;
+}
+
+.tabla-estudiantes th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabla-estudiantes td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-estudiantes tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.tabla-estudiantes tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estados */
+.estado {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.estado.activo {
+    background: #d4edda;
+    color: #155724;
+}
+
+.estado.inactivo {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Acciones en tabla */
+.acciones-tabla {
+    white-space: nowrap;
+}
+
+.acciones-tabla .btn {
+    margin-right: 5px;
+}
+
+/* Mensaje vacío */
+.mensaje-vacio {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.mensaje-vacio p {
+    font-size: 1.2em;
+}
+
+/* Formulario */
+.formulario {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.campo input[readonly] {
+    background: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.campo small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+.botones {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.botones .btn {
+    margin: 0 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    text-align: center;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .tabla-estudiantes {
+        font-size: 12px;
+    }
+    
+    .tabla-estudiantes th,
+    .tabla-estudiantes td {
+        padding: 8px;
+    }
+    
+    .acciones-tabla .btn {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .formulario {
+        padding: 0 10px;
+    }
+}
