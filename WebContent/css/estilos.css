@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -6,116 +5,92 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
     padding: 20px;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 h1 {
     color: #333;
     margin-bottom: 20px;
-    text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
-/* Página de bienvenida */
 .bienvenida {
     text-align: center;
-    padding: 20px;
-}
-
-.bienvenida h1 {
-    color: #667eea;
-    margin-bottom: 30px;
 }
 
 .bienvenida p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 1em;
 }
 
 .caracteristicas {
     list-style: none;
-    margin: 30px 0;
+    margin: 20px 0;
     text-align: left;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .caracteristicas li {
-    padding: 10px;
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 10px;
+    padding: 8px;
+    color: #555;
 }
 
 .info-campos {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 30px 0;
-    text-align: left;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #007bff;
 }
 
 .info-campos h3 {
-    color: #667eea;
-    margin-bottom: 15px;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
 .info-campos ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .info-campos li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #555;
+    font-size: 0.9em;
 }
 
 .acciones-inicio {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-/* Botones */
 .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: all 0.3s ease;
     border: none;
     cursor: pointer;
     font-size: 14px;
+    border-radius: 3px;
 }
 
 .btn-principal {
-    background: #667eea;
+    background: #007bff;
     color: white;
-    font-size: 1.2em;
-    padding: 15px 40px;
+    padding: 12px 30px;
+    font-size: 16px;
 }
 
 .btn-principal:hover {
-    background: #5568d3;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    background: #0056b3;
 }
 
 .btn-agregar {
@@ -124,15 +99,13 @@ h1 {
 }
 
 .btn-agregar:hover {
-    background: #218838;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+    background: #1e7e34;
 }
 
 .btn-editar {
     background: #ffc107;
     color: #333;
-    padding: 8px 16px;
+    padding: 8px 15px;
     font-size: 12px;
 }
 
@@ -143,12 +116,12 @@ h1 {
 .btn-eliminar {
     background: #dc3545;
     color: white;
-    padding: 8px 16px;
+    padding: 8px 15px;
     font-size: 12px;
 }
 
 .btn-eliminar:hover {
-    background: #c82333;
+    background: #b02a37;
 }
 
 .btn-guardar {
@@ -157,7 +130,7 @@ h1 {
 }
 
 .btn-guardar:hover {
-    background: #218838;
+    background: #1e7e34;
 }
 
 .btn-cancelar {
@@ -166,54 +139,45 @@ h1 {
 }
 
 .btn-cancelar:hover {
-    background: #5a6268;
+    background: #545b62;
 }
 
-/* Acciones superiores */
 .acciones {
     margin-bottom: 20px;
     text-align: right;
 }
 
-/* Tabla de estudiantes */
 .tabla-estudiantes {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tabla-estudiantes thead {
-    background: #667eea;
+    background: #007bff;
     color: white;
 }
 
 .tabla-estudiantes th {
-    padding: 15px;
+    padding: 12px;
     text-align: left;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .tabla-estudiantes td {
-    padding: 12px 15px;
+    padding: 12px;
     border-bottom: 1px solid #ddd;
 }
 
 .tabla-estudiantes tbody tr:hover {
-    background: #f8f9fa;
+    background: #f9f9f9;
 }
 
-.tabla-estudiantes tbody tr:last-child td {
-    border-bottom: none;
-}
-
-/* Estados */
 .estado {
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 20px;
+    padding: 4px 10px;
+    border-radius: 3px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .estado.activo {
@@ -226,7 +190,6 @@ h1 {
     color: #721c24;
 }
 
-/* Acciones en tabla */
 .acciones-tabla {
     white-space: nowrap;
 }
@@ -235,105 +198,70 @@ h1 {
     margin-right: 5px;
 }
 
-/* Mensaje vacío */
 .mensaje-vacio {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     color: #666;
 }
 
-.mensaje-vacio p {
-    font-size: 1.2em;
-}
-
-/* Formulario */
 .formulario {
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 .campo {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .campo label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     color: #333;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .campo input,
 .campo select {
     width: 100%;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
     font-size: 14px;
-    transition: border-color 0.3s ease;
 }
 
 .campo input:focus,
 .campo select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #007bff;
 }
 
 .campo input[readonly] {
-    background: #f8f9fa;
+    background: #e9ecef;
     cursor: not-allowed;
 }
 
 .campo small {
     display: block;
-    margin-top: 5px;
+    margin-top: 4px;
     color: #666;
     font-size: 12px;
 }
 
 .botones {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .botones .btn {
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
-/* Footer */
 .footer {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 2px solid #ddd;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
     text-align: center;
     color: #666;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-    
-    h1 {
-        font-size: 1.5em;
-    }
-    
-    .tabla-estudiantes {
-        font-size: 12px;
-    }
-    
-    .tabla-estudiantes th,
-    .tabla-estudiantes td {
-        padding: 8px;
-    }
-    
-    .acciones-tabla .btn {
-        display: block;
-        margin: 5px 0;
-    }
-    
-    .formulario {
-        padding: 0 10px;
-    }
+    font-size: 0.9em;
 }

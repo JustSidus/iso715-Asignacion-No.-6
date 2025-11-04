@@ -5,16 +5,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantenimiento de Estudiantes</title>
+    <title>Listado de Estudiantes</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sistema de Mantenimiento de Estudiantes</h1>
+        <h1>Listado de Estudiantes</h1>
         
         <div class="acciones">
-            <a href="EstudianteServlet?accion=nuevo" class="btn btn-agregar">+ Agregar Nuevo Estudiante</a>
+            <a href="EstudianteServlet?accion=nuevo" class="btn btn-agregar">Agregar Estudiante</a>
         </div>
         
         <%
@@ -24,7 +23,7 @@
             if (estudiantes == null || estudiantes.isEmpty()) {
         %>
             <div class="mensaje-vacio">
-                <p>No hay estudiantes registrados. Haga clic en "Agregar Nuevo Estudiante" para comenzar.</p>
+                <p>No hay estudiantes registrados.</p>
             </div>
         <%
             } else {
@@ -32,9 +31,9 @@
             <table class="tabla-estudiantes">
                 <thead>
                     <tr>
-                        <th>Matrícula</th>
+                        <th>Matricula</th>
                         <th>Nombre</th>
-                        <th>Dirección</th>
+                        <th>Direccion</th>
                         <th>Colegio</th>
                         <th>Estado</th>
                         <th>Acciones</th>
@@ -55,11 +54,8 @@
                             </span>
                         </td>
                         <td class="acciones-tabla">
-                            <a href="EstudianteServlet?accion=editar&matricula=<%= est.getMatricula() %>" 
-                               class="btn btn-editar">Modificar</a>
-                            <a href="EstudianteServlet?accion=eliminar&matricula=<%= est.getMatricula() %>" 
-                               class="btn btn-eliminar"
-                               onclick="return confirm('¿Está seguro de eliminar al estudiante <%= est.getNombre() %>?');">Eliminar</a>
+                            <a href="EstudianteServlet?accion=editar&matricula=<%= est.getMatricula() %>" class="btn btn-editar">Modificar</a>
+                            <a href="EstudianteServlet?accion=eliminar&matricula=<%= est.getMatricula() %>" class="btn btn-eliminar" onclick="return confirm('Confirmar eliminacion?');">Eliminar</a>
                         </td>
                     </tr>
                     <%
@@ -72,9 +68,7 @@
         %>
         
         <div class="footer">
-            <p>Total de estudiantes: 
-                <%= (estudiantes == null) ? 0 : estudiantes.size() %>
-            </p>
+            <p>Total de estudiantes: <%= (estudiantes == null) ? 0 : estudiantes.size() %></p>
         </div>
     </div>
 </body>
